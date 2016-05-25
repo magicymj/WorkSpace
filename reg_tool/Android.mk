@@ -1,0 +1,19 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE_OWNER := qcom
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_SRC_FILES := my_reg_test.c
+LOCAL_MODULE := my_reg_test
+LOCAL_MODULE_TAGS := optional
+LOCAL_CFLAGS := -Wall
+include $(BUILD_EXECUTABLE)
+
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE_OWNER := qcom
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_SRC_FILES := io.c
+LOCAL_MODULE := io
+LOCAL_MODULE_TAGS := optional
+LOCAL_CFLAGS := -Wall
+include $(BUILD_EXECUTABLE)
